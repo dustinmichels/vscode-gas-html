@@ -1,0 +1,25 @@
+{
+    "name": "gas-html",
+    "displayName": "gas-html",
+    "description": "Google Apps Script HTML",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ghtml",
+            "aliases": ["GAS-html", "ghtml"],
+            "extensions": [".ghtml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ghtml",
+            "scopeName": "source.html",
+            "path": "./syntaxes/ghtml.tmLanguage.json"
+        }]
+    }
+}
