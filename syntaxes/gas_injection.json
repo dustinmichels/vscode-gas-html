@@ -8,7 +8,7 @@
   ],
   "repository": {
     "gas-scriptlet": {
-      "begin": "(?=)(<\\?)",
+      "begin": "(?=)(<\\?=*)",
       "beginCaptures": {
         "0": {
           "name": "gas.tag.begin"
@@ -20,12 +20,7 @@
           "name": "gas.tag.end"
         }
       },
-      "contentName": "meta.embedded.line.js",
-      "patterns": [
-        {
-          "include": "source.js"
-        }
-      ]
+      "contentName": "meta.embedded.line.js"
     }
   }
 }

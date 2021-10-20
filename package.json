@@ -19,8 +19,7 @@
         ],
         "extensions": [
           ".ghtml"
-        ],
-        "configuration": "./language-configuration.json"
+        ]
       }
     ],
     "grammars": [
