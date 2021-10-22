@@ -10,18 +10,6 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "ghtml",
-        "aliases": [
-          "GAS-html",
-          "ghtml"
-        ],
-        "extensions": [
-          ".ghtml"
-        ]
-      }
-    ],
     "grammars": [
       {
         "path": "./syntaxes/gas_injection.json",
