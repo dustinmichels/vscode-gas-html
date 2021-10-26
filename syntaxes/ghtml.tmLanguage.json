@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "gas-html",
+  "scopeName": "source.gas",
+  "injections": {
+    "L:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {
+      "patterns": [
+        {
+          "match": "DOG",
+          "name": "dog"
+        }
+      ]
+    }
+  },
+  "patterns": [
+    {
+      "include": "#gas-scriptlet"
+    },
+    {
+      "include": "text.html.derivative"
+    }
+  ],
+  "repository": {
+    "gas-scriptlet": {
+      "begin": "(?=)(<\\?=*)",
+      "beginCaptures": {
+        "0": {
+          "name": "gas.tag.begin"
+        },
+        "2": {
+          "name": "entity.name.tag.html"
+        }
+      },
+      "end": "(?=)(\\?>)",
+      "endCaptures": {
+        "0": {
+          "name": "gas.tag.end"
+        }
+      },
+      "contentName": "meta.embedded.line.js"
+    }
+  }
+}

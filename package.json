@@ -1,7 +1,7 @@
 {
   "name": "gas-html",
   "displayName": "gas-html",
-  "description": "Google Apps Script HTML",
+  "description": "VSCode language support for Google App Script (GAS) html",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.61.0"
@@ -10,16 +10,25 @@
     "Programming Languages"
   ],
   "contributes": {
+    "languages": [
+      {
+        "id": "ghtml",
+        "aliases": [
+          "gas-html",
+          "ghtml"
+        ],
+        "extensions": [
+          ".ghtml",
+          ".gas-html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "grammars": [
       {
-        "path": "./syntaxes/gas_injection.json",
-        "scopeName": "gas-scriptlet.injection",
-        "injectTo": [
-          "text.html.derivative"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.line.js": "javascript"
-        }
+        "language": "ghtml",
+        "scopeName": "source.gas",
+        "path": "./syntaxes/ghtml.tmLanguage.json"
       }
     ]
   }
