@@ -1,7 +1,7 @@
 {
   "name": "gas-html",
   "displayName": "gas-html",
-  "description": "VSCode language support for Google App Script (GAS) html",
+  "description": "vs-code language support for Google App Script (GAS) html",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.61.0"
